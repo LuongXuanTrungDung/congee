@@ -1,6 +1,7 @@
 import { createContext, PropsWithChildren, useState } from 'react'
 import { emptyCategory } from '@utils/emptyObjects'
 import { ICategory } from '@interfaces/category.interface';
+import { TEST_CATEGORIES } from '@utils/testData';
 
 const initialState = {
   findCategory: (code: string) => emptyCategory,
@@ -9,7 +10,7 @@ const initialState = {
 
 export const CategoryContext = createContext(initialState)
 export function CategoryProvider(props: PropsWithChildren) {
-  const [categories, setCategories] = useState<ICategory[]>([]);
+  const [categories, setCategories] = useState<ICategory[]>(TEST_CATEGORIES);
 
   const findCategory = (code: string) => {
     const index = categories.findIndex((p) => p.code === code)
