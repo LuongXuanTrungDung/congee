@@ -1,17 +1,17 @@
 // import { useContext } from 'react'
-import { AppBar, IconButton, Link, Stack, Toolbar, Typography } from '@mui/material'
+import { AppBar, IconButton, Toolbar } from '@mui/material'
 
 import MenuIcon from '@mui/icons-material/Menu';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import AccountIcon from '@mui/icons-material/AccountCircle';
 // import { LanguageContext } from '@contexts/useLanguage'
 
-export default function AppToolbar() {
+export default function MainBar() {
   // const { translate } = useContext(LanguageContext)
   // const currentYear = new Date().getFullYear()
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{ mt: 2 }}>
       <Toolbar>
         <IconButton
           size="large"
