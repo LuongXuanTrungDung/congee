@@ -1,0 +1,41 @@
+{
+  "name": "kfir",
+  "version": "0.0.0",
+  "description": "An shopping web application for ordering food & drink products",
+  "main": "index.js",
+  "repository": "https://github.com/LuongXuanTrungDung/kfir.git",
+  "author": "Luong Xuan Trung Dung <luongxuantrungdung@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --check --ignore-path .gitignore .",
+    "format:fix": "prettier --write --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.19",
+    "@mui/lab": "^5.0.0-alpha.154",
+    "@mui/material": "^5.14.19",
+    "next": "^14.0.3",
+    "next-translate": "^2.6.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.2",
+    "@types/react": "^18.2.41",
+    "@types/react-beautiful-dnd": "^13.1.7",
+    "@types/react-dom": "^18.2.17",
+    "eslint": "^8.55.0",
+    "eslint-config-next": "^14.0.3",
+    "eslint-config-prettier": "^9.1.0",
+    "next-translate-plugin": "^2.6.2",
+    "prettier": "^3.1.0",
+    "typescript": "^5.3.2"
+  }
+}
